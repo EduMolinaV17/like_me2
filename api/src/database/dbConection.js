@@ -12,7 +12,7 @@ const config = {
 }
 
 const pool = new Pool(config)
-
+//Método de captura de errores enseñado por el profesor Raúl Farias
 const dbConection = (query, values) => pool
   .query(query, values)
   .then(({ rows }) => rows)
